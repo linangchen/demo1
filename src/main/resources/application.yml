@@ -11,6 +11,9 @@ spring:
       max-wait: 2600
       filter: stat wall
       time-between-eviction-runs-millis: 5000
+  http:
+    encoding:
+      charset: UTF-8
 mybatis-plus:
   mapper-locations: classpath:/mappers/*.xml
   type-aliases-package: site.liangchen.demo1.pojo
@@ -19,6 +22,7 @@ mybatis-plus:
       id-type: auto
       db-type: mysql
     refresh: true
+
 
 
 
